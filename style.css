@@ -2,23 +2,24 @@
 
 /* ! base css start */
 
-*{
+* {
     margin: 0;
 }
 
-body{
+body {
     font-family: 'Electrolize', sans-serif;
 }
 
-.container{
+.container {
     background-color: black;
     color: white;
 }
+
 /* ! base css end */
 
 /* ! navbar start */
 
-.navbar{
+.navbar {
     background-color: black;
     height: 50px;
     color: white;
@@ -27,20 +28,20 @@ body{
     z-index: 1;
 }
 
-.navbar_wrapper{
+.navbar_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 9px 50px;
 }
 
-.logo{
+.logo {
     font-size: 30px;
     color: rgb(255, 70, 70);
     cursor: pointer;
 }
 
-.menu_list{
+.menu_list {
     display: flex;
     list-style: none;
     column-gap: 35px;
@@ -48,45 +49,45 @@ body{
     padding: 0;
 }
 
-.menu_list_item{
+.menu_list_item {
     cursor: pointer;
 }
 
-.menu_list_item_bold{
+.menu_list_item_bold {
     cursor: pointer;
     font-weight: bold;
 }
 
-.menu_list_item_bold:hover{
+.menu_list_item_bold:hover {
     color: rgb(255, 70, 70);
 }
 
-.menu_list_item:hover{
+.menu_list_item:hover {
     font-weight: bold;
     color: rgb(255, 70, 70);
 }
 
-.profile_container{
+.profile_container {
     display: flex;
     align-items: center;
     column-gap: 20px;
 }
 
-.profile_picture{
+.profile_picture {
     width: 30px;
     height: 30px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.position_text_container{
+.position_text_container {
     display: flex;
     align-items: center;
     column-gap: 5px;
     line-height: 1;
 }
 
-.toggle{
+.toggle {
     width: 40px;
     height: 20px;
     background-color: white;
@@ -97,11 +98,11 @@ body{
     justify-content: space-around;
 }
 
-.toggle_icon{
+.toggle_icon {
     color: goldenrod;
 }
 
-.toggle_ball{
+.toggle_ball {
     width: 18px;
     height: 18px;
     background-color: black;
@@ -111,11 +112,12 @@ body{
     right: 1px;
     transition: .5s ease-in all;
 }
+
 /* ! navbar end */
 
 /* ! sidebar start */
 
-.sidebar{
+.sidebar {
     background-color: black;
     color: white;
     height: 100%;
@@ -129,37 +131,39 @@ body{
     top: 0;
 }
 
-.sidebar i{
+.sidebar i {
     color: white;
     font-size: 20px;
     cursor: pointer;
 }
+
 /* ! sidebar end */
 
 
 /* ! featured content start */
 /* ! filter start */
 
-.movie_list_filter{
+.movie_list_filter {
     margin: 20px 0 20px 50px;
     padding: 20px;
 }
 
-.movie_list_filter select{
+.movie_list_filter select {
     background-color: black;
     color: white;
     padding: 7px 0;
     width: 125px;
 }
+
 /* ! filter end */
 
 /* ! movie list  start */
 
-.movie_list_container{
+.movie_list_container {
     margin-left: 70px;
 }
 
-.movie_list{
+.movie_list {
     list-style: none;
     padding: 0;
     height: 300px;
@@ -170,28 +174,28 @@ body{
     transition: 1s all ease-in-out;
 }
 
-.movie_list_wrapper{
+.movie_list_wrapper {
     overflow: hidden;
     position: relative;
 }
 
-.movie_item{
+.movie_item {
     position: relative;
 }
 
 .movie_item:hover .movie_item_title,
-.movie_item:hover .movie_item_buttons{
+.movie_item:hover .movie_item_buttons {
     opacity: 1;
     transition: 0.5s all ease-in-out;
 }
 
-.movie_item:hover .movie_item_img{
+.movie_item:hover .movie_item_img {
     transform: scale(1.2);
     margin: 0 30px;
     opacity: 0.5;
 }
 
-.movie_item_img{
+.movie_item_img {
     width: 270px;
     height: 200px;
     object-fit: cover;
@@ -199,7 +203,7 @@ body{
 
 }
 
-.movie_item_title{
+.movie_item_title {
     background-color: rgb(40, 40, 40, 0.4);
     padding: 0 10px;
     font-size: auto;
@@ -210,7 +214,7 @@ body{
     opacity: 0;
 }
 
-.movie_item_buttons{
+.movie_item_buttons {
     background-color: rgb(40, 40, 40, 0.4);
     padding: 10px;
     font-weight: bold;
@@ -222,22 +226,23 @@ body{
     opacity: 0;
 }
 
-.movie_item_buttons i{
+.movie_item_buttons i {
     cursor: pointer;
     opacity: 0.5;
     font-size: 20px;
     transition: 0.5s all ease;
 }
-.movie_item_buttons i:hover{
+
+.movie_item_buttons i:hover {
     opacity: 1;
 
 }
 
-.arrow{
+.arrow {
     display: flex;
     width: 100px;
     font-size: 120px;
-    
+
     left: 100;
     top: 100px;
     opacity: .5;
@@ -246,33 +251,33 @@ body{
     position: absolute;
 }
 
-.arrow:hover{
+.arrow:hover {
     opacity: 1;
 }
 
-.icon_container{
+.icon_container {
     display: flex;
     justify-content: flex-end;
 }
 
 /* ! movie list  end */
 
-.content_wrapper{
-margin-left: 50px;
+.content_wrapper {
+    margin-left: 50px;
 }
 
-.featured_content{
-background: url(img/Spider\ Man.jpeg);
-padding: 80px;
-height: calc(100vh - 210px);
-background-size: 100% 100%;
+.featured_content {
+    background: url(img/Spider\ Man.jpeg);
+    padding: 80px;
+    height: calc(100vh - 210px);
+    background-size: 100% 100%;
 }
 
-.featured_title{
+.featured_title {
     width: 400px;
 }
 
-.featured_desc{
+.featured_desc {
     width: 500px;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
@@ -280,13 +285,13 @@ background-size: 100% 100%;
     color: black;
 }
 
-.featured_butons{
+.featured_butons {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.featured_butons button{
+.featured_butons button {
     padding: 10px 25px;
     border-radius: 2px;
     border: none;
@@ -298,8 +303,8 @@ background-size: 100% 100%;
     font-weight: bold;
 }
 
-.featured_butons .info_button{
-    background-color: rgb(145, 142 ,142, 0.5);
+.featured_butons .info_button {
+    background-color: rgb(145, 142, 142, 0.5);
     color: white;
 }
 
@@ -307,58 +312,59 @@ background-size: 100% 100%;
 
 /* ! dark mode start */
 
-.container.active{
+.container.active {
     background-color: white;
 }
 
-.navbar.active{
+.navbar.active {
     background-color: white;
     color: black;
 }
 
-.sidebar.active{
+.sidebar.active {
     background-color: white;
 }
 
-.sidebar i.active{
+.sidebar i.active {
     color: black;
 }
 
-.toggle.active{
+.toggle.active {
     background-color: black;
 }
 
-.toggle_ball.active{
+.toggle_ball.active {
     background-color: white;
     transform: translateX(-20px);
 }
 
-.movie_list_filter select.active{
+.movie_list_filter select.active {
     background-color: white;
     color: black;
 }
 
-.movie_list_title.active{
+.movie_list_title.active {
     color: black;
 }
+
 /* ! dark mode end */
 
 /* ! responsive start */
 
-@media only screen and (max-width:800px){
-    .menu_container{
+@media only screen and (max-width:800px) {
+    .menu_container {
         display: none;
     }
 
-    .featured_content{
+    .featured_content {
         height: 50vh;
     }
 
-    .featured_title{
+    .featured_title {
         width: 200px;
     }
 
-    .featured_desc{
+    .featured_desc {
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 5;
