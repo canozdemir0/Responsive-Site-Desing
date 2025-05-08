@@ -20,7 +20,7 @@ arrows.forEach((arrow, i) => {
 /* dark mode */
 
 const ball = document.querySelector(".toggle_ball");
-const items = document.querySelectorAll(".container,.navbar,.sidebar,sidebar i,.toggle,.toggle_ball,.movie_list_filter select,.movie_list_title")
+const items = document.querySelectorAll(".container,.navbar,.sidebar,.sidebar i,.toggle,.toggle_ball,.movie_list_filter select,.movie_list_title")
 
 ball.addEventListener("click", function () {
     items.forEach((item) => item.classList.toggle("active"))

@@ -250,6 +250,11 @@ body{
     opacity: 1;
 }
 
+.icon_container{
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* ! movie list  end */
 
 .content_wrapper{
